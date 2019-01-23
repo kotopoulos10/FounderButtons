@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var founder: UILabel!
-    @IBOutlet weak var coFounder: UILabel!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -19,19 +19,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func showGoogleFounders(_ sender: UIButton) {
-        founder.text = "Larry Page"
-        coFounder.text = "Sergey Brin"
+    @IBAction func googleButtonPressed(_ sender: UIButton) {
+        topLabel.text = "Larry Page"
+        bottomLabel.text = "Sergey Brin"
     }
     
-    @IBAction func showRentTheRunwayFounders(_ sender: UIButton) {
-        founder.text = "Jennifer Hyman"
-        coFounder.text = "Jenny Fleiss"
+    @IBAction func rtrButtonPressed(_ sender: UIButton) {
+        topLabel.text = "Jennifer Hyman"
+        bottomLabel.text = "Jenny Fleiss"
     }
     
     @IBAction func clearButtonPressed(_ sender: UIButton) {
-        founder.text = ""
-        coFounder.text = ""
+        topLabel.text = ""
+        bottomLabel.text = ""
     }
     
 }

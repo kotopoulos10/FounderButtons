@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,57 +15,84 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FounderButtons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI7-xI-T9O">
-                                <rect key="frame" x="91" y="256" width="196" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI7-xI-T9O">
+                                <rect key="frame" x="89.5" y="225" width="196" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="FMT-da-6RR"/>
+                                    <constraint firstAttribute="height" constant="36" id="o6b-7h-vl9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Who founded Google?"/>
                                 <connections>
-                                    <action selector="showGoogleFounders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8aa-2E-Ne8"/>
+                                    <action selector="googleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8aa-2E-Ne8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HB-fb-uOj">
-                                <rect key="frame" x="50" y="303" width="279" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Who founded Rent the Runway?"/>
-                                <connections>
-                                    <action selector="showRentTheRunwayFounders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuM-a3-gAr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-GC-wBh">
-                                <rect key="frame" x="164" y="390" width="47" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-GC-wBh">
+                                <rect key="frame" x="162.5" y="367" width="50" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="m12-Bv-asA"/>
+                                    <constraint firstAttribute="height" constant="36" id="n8d-Ob-Bzb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzX-Pf-cfN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-QX-Fy9">
-                                <rect key="frame" x="61" y="147" width="253" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-QX-Fy9">
+                                <rect key="frame" x="16" y="125" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="szc-or-56s"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.84313725490000002" green="0.76470588240000004" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHu-s6-oPI">
-                                <rect key="frame" x="61" y="75" width="253" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHu-s6-oPI">
+                                <rect key="frame" x="16" y="40" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ueF-7p-8OG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.49803921569999998" green="0.066666666669999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HB-fb-uOj">
+                                <rect key="frame" x="48" y="281" width="279" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="fBt-KN-Mwi"/>
+                                    <constraint firstAttribute="height" constant="36" id="hxP-8H-0ym"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Who founded Rent the Runway?"/>
+                                <connections>
+                                    <action selector="rtrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuM-a3-gAr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KHu-s6-oPI" secondAttribute="trailing" constant="16" id="25F-U6-91G"/>
+                            <constraint firstItem="KHu-s6-oPI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OJ7-Rj-6Ig"/>
+                            <constraint firstItem="zI7-xI-T9O" firstAttribute="top" secondItem="NZz-QX-Fy9" secondAttribute="bottom" constant="40" id="OP1-su-Lne"/>
+                            <constraint firstItem="0HB-fb-uOj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PhB-di-l9i"/>
+                            <constraint firstItem="NZz-QX-Fy9" firstAttribute="top" secondItem="KHu-s6-oPI" secondAttribute="bottom" constant="25" id="RtO-zb-1oi"/>
+                            <constraint firstItem="KHu-s6-oPI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rz9-Fa-8CH"/>
+                            <constraint firstItem="zI7-xI-T9O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vtg-bK-ac8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZz-QX-Fy9" secondAttribute="trailing" constant="16" id="ZaM-9x-yW3"/>
+                            <constraint firstItem="4WK-GC-wBh" firstAttribute="top" secondItem="0HB-fb-uOj" secondAttribute="bottom" constant="50" id="aUW-Xw-SGw"/>
+                            <constraint firstItem="4WK-GC-wBh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="beI-55-1qF"/>
+                            <constraint firstItem="0HB-fb-uOj" firstAttribute="top" secondItem="zI7-xI-T9O" secondAttribute="bottom" constant="20" id="emw-nO-WM0"/>
+                            <constraint firstItem="NZz-QX-Fy9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zDn-K4-ubX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="coFounder" destination="NZz-QX-Fy9" id="wiF-Op-jHE"/>
-                        <outlet property="founder" destination="KHu-s6-oPI" id="OIz-M1-K4l"/>
+                        <outlet property="bottomLabel" destination="NZz-QX-Fy9" id="wiF-Op-jHE"/>
+                        <outlet property="topLabel" destination="KHu-s6-oPI" id="OIz-M1-K4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
